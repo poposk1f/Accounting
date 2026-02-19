@@ -1,0 +1,8 @@
+date,description,amount,label
+2026-01-01,Office Rent,-2000,rent
+2026-01-02,Client Invoice #1001,3500,income
+2026-01-03,Internet Bill,-120,utilities
+2026-01-04,Client Invoice #1002,4200,income
+2026-01-05,Payroll Batch,-1800,payroll
+2026-01-06,Cloud Hosting,-300,software
+2026-01-07,Tax Payment,-900,tax
