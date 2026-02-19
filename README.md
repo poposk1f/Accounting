@@ -1,28 +1,27 @@
-# Accounting Helper App
+# Accounting Insights Assistant
 
-A beginner-friendly command-line app that helps with accounting by:
+A practical command-line accounting tool that goes beyond simple totals and highlights signals teams actually act on:
 
-- reading transactions from a CSV file
-- grouping totals by `label`
-- optionally showing only one label (like `income` or `payroll`)
+- **Label performance** (count, average, and total)
+- **Monthly net cashflow trend** with running balance
+- **Expense anomaly detection** for unusually large outliers
+- **Recurring expense detection** for vendor/subscription oversight
+- **Actionable recommendations** generated from your transaction signals
 
 ---
 
-## 1) Install Python (first time only)
+## 1) Install Python (one-time setup)
 
-If you're new to Python, start here:
+1. Download Python 3.10+ from [python.org/downloads](https://www.python.org/downloads/)
+2. On Windows, check **Add Python to PATH** during install.
 
-1. Go to [python.org/downloads](https://www.python.org/downloads/)
-2. Download Python 3.10+ for your operating system.
-3. During installation on Windows, **check** "Add Python to PATH".
-
-After install, open a terminal and verify:
+Confirm installation:
 
 ```bash
 python --version
 ```
 
-If that doesn't work, try:
+If needed:
 
 ```bash
 python3 --version
@@ -30,90 +29,54 @@ python3 --version
 
 ---
 
-## 2) Open a terminal in this project folder
+## 2) Open terminal in this project folder
 
-You should be inside the folder that contains:
+The folder should contain:
 
 - `app.py`
 - `sample_transactions.csv`
 
 ---
 
-## 3) Run the app
-
-### Option A (most systems)
+## 3) Run the insights report
 
 ```bash
 python app.py sample_transactions.csv
 ```
 
-### Option B (some macOS/Linux systems)
+or:
 
 ```bash
 python3 app.py sample_transactions.csv
 ```
 
-You will see a **Label Summary** showing totals per label.
-
 ---
 
-## 4) Filter by one label (optional)
-
-Example: show only `income` transactions:
+## 4) Optional label drill-down
 
 ```bash
-python app.py sample_transactions.csv --label income
+python app.py sample_transactions.csv --label payroll
 ```
-
-(Or use `python3` if your machine needs that.)
 
 ---
 
-## 5) Use your own CSV file
+## 5) CSV format requirements
 
-You can replace `sample_transactions.csv` with your own CSV, but it must include these columns exactly:
+Your CSV must contain these exact columns:
 
-- `date`
+- `date` (format: `YYYY-MM-DD`)
 - `description`
 - `amount` (positive for income, negative for expenses)
 - `label`
 
-Example:
-
-```bash
-python app.py your_file.csv
-```
-
 ---
 
-## Common beginner issues
+## Example output sections
 
-### "python is not recognized"
+- `Label Performance`
+- `Monthly Net Cashflow`
+- `Potential Expense Anomalies`
+- `Recurring Expense Signals`
+- `Actionable Recommendations`
 
-- Python is not installed, or not added to PATH.
-- Reinstall Python and ensure "Add Python to PATH" is enabled.
-
-### "No such file or directory"
-
-- You're in the wrong folder.
-- `cd` into the project directory first, then run the command again.
-
-### "CSV must contain these columns..."
-
-- Your CSV headers don't match required names.
-- Rename headers to: `date,description,amount,label`.
-
----
-
-## Example output
-
-```text
-Label Summary
-========================================
-income                    7700.00
-utilities                 -120.00
-software                  -300.00
-tax                       -900.00
-payroll                  -1800.00
-rent                     -2000.00
-```
+These sections are designed to support monthly close, cost controls, and management reporting.

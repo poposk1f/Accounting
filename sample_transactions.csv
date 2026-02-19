@@ -1,8 +1,19 @@
 date,description,amount,label
-2026-01-01,Office Rent,-2000,rent
-2026-01-02,Client Invoice #1001,3500,income
-2026-01-03,Internet Bill,-120,utilities
-2026-01-04,Client Invoice #1002,4200,income
-2026-01-05,Payroll Batch,-1800,payroll
-2026-01-06,Cloud Hosting,-300,software
-2026-01-07,Tax Payment,-900,tax
+2024-01-03,Consulting Retainer,5000,income
+2024-01-05,Office Rent,-2000,rent
+2024-01-10,Payroll Batch 1,-1800,payroll
+2024-01-12,Cloud Software Suite,-300,software
+2024-01-15,Electricity Bill,-120,utilities
+2024-01-20,Quarterly Tax Payment,-900,tax
+2024-02-03,Consulting Retainer,5200,income
+2024-02-05,Office Rent,-2000,rent
+2024-02-10,Payroll Batch 1,-1850,payroll
+2024-02-12,Cloud Software Suite,-305,software
+2024-02-15,Electricity Bill,-118,utilities
+2024-02-18,Emergency Equipment Replacement,-2200,operations
+2024-03-03,Consulting Retainer,5400,income
+2024-03-05,Office Rent,-2000,rent
+2024-03-10,Payroll Batch 1,-1900,payroll
+2024-03-12,Cloud Software Suite,-298,software
+2024-03-15,Electricity Bill,-125,utilities
+2024-03-20,Quarterly Tax Payment,-950,tax
